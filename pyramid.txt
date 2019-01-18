@@ -1,0 +1,12 @@
+class array
+{
+ public static void main(string[] args)
+ {
+   int r,j;
+int n=4;
+ for(r=1;r<=n;r++)
+  {
+   for(j=1;j<=n;j++)
+   {
+   System.out.println( 
+  
