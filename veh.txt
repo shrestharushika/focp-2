@@ -1,0 +1,10 @@
+class Vehicle{
+          int vh;
+  vehicle(int v){
+          vehicle=v;    
+  }
+  
+  void display(){
+        System.out.println("this is a vehicle");
+   }
+ }
