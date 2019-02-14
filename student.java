@@ -1,33 +1,53 @@
-package abc;
-class Student{
-	int i=0;
+package com.ncu.assignment.classes;
+class Student
+{
 	String firstName;
-        String lastName;
-           int addr;
-        int dob;
-        String [] skills=new String[15];
-        String[] qual=new String[15];
-        String [] projects=new String[15];
-        String email;
-        String contactNo;
-	       Student(String firstname,String lastname,int addr,String skills[],String qua[],String projects[],String email,String contactNo){
-                         this.firstName=firstname;
-                         this.lastName=lastname;
-                         this.addr=addr;
-                         this.dob=dob;
-                         this.skills=skills;
-                         this.qual=qual;
-                         this.projects=projects;
-                         this.email=email;
-                       }           
-  Student(String firstname,String lastname,int addr,String skills[],String qual[],String email,String contactNo){
-                         this.firstName=firstname;
-                         this.lastName=lastname;
-                         this.addr=addr;
-                         this.dob=dob;
-                         this.skills=skills;
-                         this.qual=qual;
-                         this.email=email;
-			}
-               
+	String lastName;
+	Address addr;
+	String[]skills;
+	Qualification[]qual;
+	Project[]project;
+	String eMail;
+	String contactNo;
+    Student(String firstName,String lastName,Address address,String skills[],Qualification qual[],Project project[],String eMail,String contactNo)
+    {
+    	this.firstName= firstName;
+    	this.lastName= lastName;
+    	this.address= addr;
+    	this.skills=skills;
+    	this.qual=qual;
+    	this.project=project;
+    	this.eMail= eMail;
+    	this.contactNo= contactNo;
+    } 
+    Student(String firstName,String lastName,Address address,String skills[],Qualification qual[],String eMail,String contactNo)
+    {
+        this.firstName= firstName;
+        this.lastName= lastName;
+        this.address= addr ;
+        this.skills= skills;
+        this.qual= qual;
+        this.eMail= eMail;
+        this.contactNo= contactNo;
+    }
+    String display()
+    {
+        System.out.println("First name: "+this.firstName);
+        System.out.print("Last Name: "+this.lastName);
+        this.addr.display;
+        for(int i=0;i<qual.length;i++)
+        {
+           qual[i].display; 
+        }
+        System.out.print("Skills: "+skills[i]);
+        for(int i=0;i<project.length;i++)
+        {
+            project[i].display;
+        }
+        System.out.print("E-mail: "+this.eMail);
+        System.out.print("Contact No: "+this.contactNo);
+        
+
+    }
+
 }
